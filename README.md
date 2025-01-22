@@ -17,3 +17,10 @@ Deploy windows sample IIS container app
 ```
 kubectl apply -f .\winapp\iis.yaml
 ```
+
+## ACA
+
+Execute shell script acup.sh in aca folder
+```
+sh aca/acup.sh
+```
