@@ -41,6 +41,12 @@ resource aks 'Microsoft.ContainerService/managedClusters@2024-02-01' = {
   }
   properties: {
     dnsPrefix: dnsPrefix
+    enableRBAC: true
+    addonProfiles: {
+      httpApplicationRouting: {
+        enabled: true
+      }
+    }
     agentPoolProfiles: [
       {
         name: 'agentpool'
