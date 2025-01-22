@@ -23,6 +23,13 @@ spec:
             memory: 800M
         ports:
           - containerPort: 80
+        volumeMounts:
+        - mountPath: "x:"
+          name: volume
+      volumes:
+      - name: volume
+        persistentVolumeClaim:
+          claimName: azurefile-storage
   selector:
     matchLabels:
       app: iis
