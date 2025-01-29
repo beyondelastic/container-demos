@@ -29,5 +29,5 @@ sh aca/acup.sh
 
 AAS with Windows plan and dotnet deployment run
 ```
-az deployment group create --resource-group 'resource-group' --template-file .\aca\main.bicep
+az deployment group create --resource-group 'resource-group' --template-file .\aas\main.bicep
 ```
