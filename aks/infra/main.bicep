@@ -1,6 +1,6 @@
 targetScope = 'resourceGroup'
 
-param resourceLocation string = 'swedencentral'
+param resourceLocation string = 'westeurope'
 param resourceGroupName string = 'rg-alexander'
 param sshRSAPublicKey string
 param linuxAdmin string = 'aullah'
